@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+<div>
+<h1>Product Info</h1>
+
+	<p>Product Name: <%=productInfo.productName%></p>
+        <p>Product Code: <%=productInfo.productCode%></p>
+        <p>Product Line: <%=productInfo.productLine%></p>
+        <p>Product Scale: <%=productInfo.productScale%></p>
+        <p>Product Vendor: <%=productInfo.productVendor%></p>
+        <p>Product Description: <%=productInfo.productDescription%></p>
+        <p><br>Total Number of Orders for this Product: <%=orderInfo.length%></p>
+</div>
+<h1>Order Numbers</h1>
+<% for(let i = 0; i < orderInfo.length; i++) { %>
+	<div class="col-sm-12">
+		<a href="/orders/?msg=<%=orderInfo[i].orderNumber%>"> <%= orderInfo[i].orderNumber %> </a>	
+	</div>
+<% } %>
+
+</body>
+</html>

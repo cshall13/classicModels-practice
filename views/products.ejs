@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+
+<h1>Products</h1>
+
+	<% for(let i = 0; i < productNames.length; i++) { %>
+		<div class="col-sm-12">
+			<a href="/product_info/?msg=<%=productNames[i]%>"> <%= productNames[i] %> </a>		
+		</div>
+		<% } %>
+</body>
+</html>

@@ -10,7 +10,7 @@
 
 	<% for(let i = 0; i < products.length; i++) { %>
 		<div class="col-sm-12">
-			<a href="/product"> <%= products[i].productLine %> </a>		
+			<a href="/products/?msg=<%=products[i].productLine%>"> <%= products[i].productLine %> </a>		
 		</div>
 		<% } %>
 </body>
